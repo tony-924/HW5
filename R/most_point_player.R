@@ -9,6 +9,6 @@
 
 most_point_player <- function(year){
   points <-  dplyr::filter(data, Year == year)
-  newdata <- arrange(points, desc(PTS))
+  newdata <- dplyr::arrange(points, desc(PTS))
   newdata$Player[1]
 }
